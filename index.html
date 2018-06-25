@@ -1,1 +1,39 @@
-Hello World
+Setup Shadowsocks with chacha20-ietf-poly1305 encryption in Ubuntu 16.04
+
+https://github.com/shadowsocks/shadowsocks-qt5/issues/595
+
+# 1 Install libsodium
+sudo apt-get install libsodium-dev
+
+# 2 Install libbotan-2.x from source
+wget https://botan.randombit.net/releases/Botan-2.3.0.tgz
+tar xvf Botan-2.3.0.tgz
+cd Botan-2.3.0
+./configure.py
+make
+sudo make install
+sudo ldconfig
+
+# 3 Install libQtShadowsocks
+git clone https://github.com/shadowsocks/libQtShadowsocks.git
+cd libQtShadowsocks
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+# 4 Install dependencies for shadowsocks-qt5
+https://github.com/shadowsocks/shadowsocks-qt5/wiki/Compiling
+
+# 5 Install shadowsocks-qt5
+git clone https://github.com/shadowsocks/shadowsocks-qt5
+cd shadowsocks-qt5
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+
+
+
