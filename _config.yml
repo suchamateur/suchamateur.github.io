@@ -28,6 +28,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+collections:
+  posts:
+    output: true
+    permalink: /posts/blog/:short_year/:month/:day/:title:output_text
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
