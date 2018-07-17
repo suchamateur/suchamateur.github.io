@@ -4,8 +4,6 @@ title:  "Install latest Julia with Ubuntu 16.04"
 date:   2018-07-09 14:15:18 +0800
 categories: Ubuntu Julia
 ---
-[Original Post][original-post]
-
 # 1 Download latest Julia
 [Julia Download][julia-download]
 `Generic Linux Binaries for X86`

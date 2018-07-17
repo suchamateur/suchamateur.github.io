@@ -73,6 +73,11 @@ body {
 }
 
 /* post style */
+.article h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .article {
     font-size: 17px;
     color: $article-color;

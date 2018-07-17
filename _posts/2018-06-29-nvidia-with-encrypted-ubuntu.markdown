@@ -4,11 +4,6 @@ title:  "Nvidia graphics in encrypted Ubuntu 16.04"
 date:   2018-06-29 09:59:18 +0800
 categories: Ubuntu
 ---
-
-
-
-[Original Post][original-post]
-
 # 1 Update GRUB
 In `/etc/default/grub`, change `GRUB_CMDLINE_LINUX_DEFAULT="quiet-splash"` to `GRUB_CMDLINE_LINUX_DEFAULT=""`
 
